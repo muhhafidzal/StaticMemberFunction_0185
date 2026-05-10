@@ -44,3 +44,29 @@ public:
         cout << "--------------------------" << endl;
     }
 };
+
+int main()
+{
+    // Objek dengan constructor tanpa parameter
+    Kendaraan k1;
+
+    // Objek dengan constructor hanya id
+    Kendaraan k2(101);
+
+    // Objek dengan constructor hanya nama
+    Kendaraan k3("Motor");
+
+    // Objek dengan constructor lengkap
+    Kendaraan k4(202, "Mobil");
+
+    // Menampilkan data kendaraan
+    cout << "Data Kendaraan:" << endl;
+    cout << "--------------------------" << endl;
+
+    k1.tampilkan();
+    k2.tampilkan();
+    k3.tampilkan();
+    k4.tampilkan();
+
+    return 0;
+}
